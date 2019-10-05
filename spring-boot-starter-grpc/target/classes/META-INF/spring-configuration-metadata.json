@@ -1,0 +1,44 @@
+{
+  "groups": [
+    {
+      "name": "spring.grpc",
+      "type": "com.raiden.grpc.config.GrpcProperties",
+      "sourceType": "com.raiden.grpc.config.GrpcProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.grpc.client-interceptor",
+      "type": "java.lang.Class",
+      "description": "client interceptor",
+      "sourceType": "com.raiden.grpc.config.GrpcProperties"
+    },
+    {
+      "name": "spring.grpc.enable",
+      "type": "java.lang.Boolean",
+      "description": "enable server start",
+      "sourceType": "com.raiden.grpc.config.GrpcProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.grpc.port",
+      "type": "java.lang.Integer",
+      "description": "server listen port",
+      "sourceType": "com.raiden.grpc.config.GrpcProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.grpc.remote-servers",
+      "type": "java.util.List<com.raiden.grpc.config.RemoteServer>",
+      "description": "client config",
+      "sourceType": "com.raiden.grpc.config.GrpcProperties"
+    },
+    {
+      "name": "spring.grpc.server-interceptor",
+      "type": "java.lang.Class",
+      "description": "server interceptor",
+      "sourceType": "com.raiden.grpc.config.GrpcProperties"
+    }
+  ],
+  "hints": []
+}
