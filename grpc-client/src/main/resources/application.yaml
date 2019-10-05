@@ -1,0 +1,12 @@
+server:
+  port: 8010
+
+spring:
+  grpc:
+    remote-servers:
+    - server: user
+      host: 127.0.0.1
+      port: 8000
+    - server: order
+      host: 127.0.0.1
+      port: 8000
