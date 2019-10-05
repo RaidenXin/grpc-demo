@@ -1,4 +1,4 @@
-package com.anoyi.rpc;
+package com.raiden.rpc;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
@@ -30,30 +30,30 @@ public final class CommonServiceGrpc {
   public static final String SERVICE_NAME = "CommonService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<com.anoyi.rpc.GrpcService.Request,
-      com.anoyi.rpc.GrpcService.Response> getHandleMethod;
+  private static volatile io.grpc.MethodDescriptor<com.raiden.rpc.GrpcService.Request,
+      com.raiden.rpc.GrpcService.Response> getHandleMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "handle",
-      requestType = com.anoyi.rpc.GrpcService.Request.class,
-      responseType = com.anoyi.rpc.GrpcService.Response.class,
+      requestType = com.raiden.rpc.GrpcService.Request.class,
+      responseType = com.raiden.rpc.GrpcService.Response.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.anoyi.rpc.GrpcService.Request,
-      com.anoyi.rpc.GrpcService.Response> getHandleMethod() {
-    io.grpc.MethodDescriptor<com.anoyi.rpc.GrpcService.Request, com.anoyi.rpc.GrpcService.Response> getHandleMethod;
+  public static io.grpc.MethodDescriptor<com.raiden.rpc.GrpcService.Request,
+      com.raiden.rpc.GrpcService.Response> getHandleMethod() {
+    io.grpc.MethodDescriptor<com.raiden.rpc.GrpcService.Request, com.raiden.rpc.GrpcService.Response> getHandleMethod;
     if ((getHandleMethod = CommonServiceGrpc.getHandleMethod) == null) {
       synchronized (CommonServiceGrpc.class) {
         if ((getHandleMethod = CommonServiceGrpc.getHandleMethod) == null) {
           CommonServiceGrpc.getHandleMethod = getHandleMethod = 
-              io.grpc.MethodDescriptor.<com.anoyi.rpc.GrpcService.Request, com.anoyi.rpc.GrpcService.Response>newBuilder()
+              io.grpc.MethodDescriptor.<com.raiden.rpc.GrpcService.Request, com.raiden.rpc.GrpcService.Response>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "CommonService", "handle"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.anoyi.rpc.GrpcService.Request.getDefaultInstance()))
+                  com.raiden.rpc.GrpcService.Request.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.anoyi.rpc.GrpcService.Response.getDefaultInstance()))
+                  com.raiden.rpc.GrpcService.Response.getDefaultInstance()))
                   .setSchemaDescriptor(new CommonServiceMethodDescriptorSupplier("handle"))
                   .build();
           }
@@ -97,8 +97,8 @@ public final class CommonServiceGrpc {
      * 处理请求
      * </pre>
      */
-    public void handle(com.anoyi.rpc.GrpcService.Request request,
-        io.grpc.stub.StreamObserver<com.anoyi.rpc.GrpcService.Response> responseObserver) {
+    public void handle(com.raiden.rpc.GrpcService.Request request,
+        io.grpc.stub.StreamObserver<com.raiden.rpc.GrpcService.Response> responseObserver) {
       asyncUnimplementedUnaryCall(getHandleMethod(), responseObserver);
     }
 
@@ -108,8 +108,8 @@ public final class CommonServiceGrpc {
             getHandleMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                com.anoyi.rpc.GrpcService.Request,
-                com.anoyi.rpc.GrpcService.Response>(
+                com.raiden.rpc.GrpcService.Request,
+                com.raiden.rpc.GrpcService.Response>(
                   this, METHODID_HANDLE)))
           .build();
     }
@@ -141,8 +141,8 @@ public final class CommonServiceGrpc {
      * 处理请求
      * </pre>
      */
-    public void handle(com.anoyi.rpc.GrpcService.Request request,
-        io.grpc.stub.StreamObserver<com.anoyi.rpc.GrpcService.Response> responseObserver) {
+    public void handle(com.raiden.rpc.GrpcService.Request request,
+        io.grpc.stub.StreamObserver<com.raiden.rpc.GrpcService.Response> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getHandleMethod(), getCallOptions()), request, responseObserver);
     }
@@ -174,7 +174,7 @@ public final class CommonServiceGrpc {
      * 处理请求
      * </pre>
      */
-    public com.anoyi.rpc.GrpcService.Response handle(com.anoyi.rpc.GrpcService.Request request) {
+    public com.raiden.rpc.GrpcService.Response handle(com.raiden.rpc.GrpcService.Request request) {
       return blockingUnaryCall(
           getChannel(), getHandleMethod(), getCallOptions(), request);
     }
@@ -206,8 +206,8 @@ public final class CommonServiceGrpc {
      * 处理请求
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.anoyi.rpc.GrpcService.Response> handle(
-        com.anoyi.rpc.GrpcService.Request request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.raiden.rpc.GrpcService.Response> handle(
+        com.raiden.rpc.GrpcService.Request request) {
       return futureUnaryCall(
           getChannel().newCall(getHandleMethod(), getCallOptions()), request);
     }
@@ -233,8 +233,8 @@ public final class CommonServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_HANDLE:
-          serviceImpl.handle((com.anoyi.rpc.GrpcService.Request) request,
-              (io.grpc.stub.StreamObserver<com.anoyi.rpc.GrpcService.Response>) responseObserver);
+          serviceImpl.handle((com.raiden.rpc.GrpcService.Request) request,
+              (io.grpc.stub.StreamObserver<com.raiden.rpc.GrpcService.Response>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -258,7 +258,7 @@ public final class CommonServiceGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return com.anoyi.rpc.GrpcService.getDescriptor();
+      return com.raiden.rpc.GrpcService.getDescriptor();
     }
 
     @java.lang.Override

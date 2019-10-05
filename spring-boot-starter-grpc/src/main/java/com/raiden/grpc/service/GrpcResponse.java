@@ -1,6 +1,6 @@
 package com.raiden.grpc.service;
 
-import com.anoyi.grpc.constant.GrpcResponseStatus;
+import com.raiden.grpc.constant.GrpcResponseStatus;
 import lombok.Data;
 
 import java.io.Serializable;

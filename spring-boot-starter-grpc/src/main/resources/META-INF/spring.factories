@@ -1,1 +1,1 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.anoyi.grpc.config.GrpcAutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.raiden.grpc.config.GrpcAutoConfiguration

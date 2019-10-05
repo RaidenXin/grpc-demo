@@ -1,8 +1,7 @@
 package com.raiden.grpc.constant;
 
-import com.anoyi.grpc.service.impl.FastJSONSerializeService;
-import com.anoyi.grpc.service.impl.ProtoStuffSerializeService;
-import com.anoyi.grpc.service.impl.SofaHessianSerializeService;
+
+import com.raiden.grpc.service.impl.ProtoStuffSerializeService;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,9 +11,7 @@ import java.util.Map;
  */
 public enum SerializeType {
 
-    SOFAHESSIAN(1, SofaHessianSerializeService.class),
-    PROTOSTUFF(2, ProtoStuffSerializeService.class),
-    FASTJSON(3, FastJSONSerializeService.class);
+    PROTOSTUFF(2, ProtoStuffSerializeService.class);
 
     private static Map<Integer, SerializeType> enumMap = new HashMap<>();
 

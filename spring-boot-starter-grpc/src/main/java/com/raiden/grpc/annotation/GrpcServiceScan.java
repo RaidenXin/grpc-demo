@@ -1,6 +1,6 @@
 package com.raiden.grpc.annotation;
 
-import com.anoyi.grpc.config.GrpcAutoConfiguration;
+import com.raiden.grpc.config.GrpcAutoConfiguration;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.ElementType;

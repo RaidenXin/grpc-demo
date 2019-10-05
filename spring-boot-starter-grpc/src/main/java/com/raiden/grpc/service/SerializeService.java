@@ -1,7 +1,7 @@
 package com.raiden.grpc.service;
 
-import com.anoyi.rpc.GrpcService;
 import com.google.protobuf.ByteString;
+import com.raiden.rpc.GrpcService;
 
 public interface SerializeService {
 
