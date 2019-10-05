@@ -1,0 +1,7 @@
+server:
+  port: 8002
+
+spring:
+  grpc:
+    enable: true
+    port: 8082
