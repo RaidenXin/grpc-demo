@@ -33,22 +33,12 @@ public class ServerContext {
      * 处理 gRPC 请求
      */
     public GrpcResponse handle(SerializeType serializeType, GrpcRequest grpcRequest) {
-        return handle(serializeType, grpcRequest, 0);
-    }
-
-    /**
-     * 处理 gRPC 请求
-     */
-    public GrpcResponse handle(SerializeType serializeType, GrpcRequest grpcRequest,long timeout) {
         SerializeService serializeService = SerializeUtils.getSerializeService(serializeType, this.defaultSerializeService);
         ByteString bytes = serializeService.serialize(grpcRequest);
         int value = (serializeType == null ? -1 : serializeType.getValue());
         GrpcService.Request request = GrpcService.Request.newBuilder().setSerialize(value).setRequest(bytes).build();
         GrpcService.Response response = null;
         try{
-            if (timeout != 0){
-                blockingStub.withDeadlineAfter(timeout, TimeUnit.SECONDS);
-            }
             response = blockingStub.handle(request);
         }catch (Exception exception){
             log.warn("rpc exception: {}", exception.getMessage());
