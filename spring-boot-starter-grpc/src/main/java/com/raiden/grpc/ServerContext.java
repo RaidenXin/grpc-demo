@@ -1,6 +1,7 @@
 package com.raiden.grpc;
 
 
+import com.google.common.util.concurrent.ListenableFuture;
 import com.google.protobuf.ByteString;
 import com.raiden.grpc.constant.SerializeType;
 import com.raiden.grpc.service.GrpcRequest;
@@ -21,12 +22,12 @@ public class ServerContext {
 
     private final SerializeService defaultSerializeService;
 
-    private CommonServiceGrpc.CommonServiceBlockingStub blockingStub;
+    private CommonServiceGrpc.CommonServiceFutureStub futureStub;
 
     ServerContext(Channel channel, SerializeService serializeService) {
         this.channel = channel;
         this.defaultSerializeService = serializeService;
-        blockingStub = CommonServiceGrpc.newBlockingStub(channel);
+        futureStub = CommonServiceGrpc.newFutureStub(channel);
     }
 
     /**
@@ -39,12 +40,10 @@ public class ServerContext {
         GrpcService.Request request = GrpcService.Request.newBuilder().setSerialize(value).setRequest(bytes).build();
         GrpcService.Response response = null;
         try{
-            response = blockingStub.handle(request);
+            ListenableFuture<GrpcService.Response> handle = futureStub.handle(request);
+            response = handle.get(5, TimeUnit.SECONDS);
         }catch (Exception exception){
             log.warn("rpc exception: {}", exception.getMessage());
-            if ("UNAVAILABLE: io exception".equals(exception.getMessage().trim())){
-                response = blockingStub.handle(request);
-            }
         }
         return serializeService.deserialize(response);
     }
