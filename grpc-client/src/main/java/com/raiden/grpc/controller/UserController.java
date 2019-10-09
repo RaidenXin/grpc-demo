@@ -48,25 +48,27 @@ public class UserController {
     public OrderVO queryOrder(@RequestParam("resNo") String resNo){
         HotelOrder.Order order = orderService.queryOrder(resNo);
         OrderVO orderDTO = new OrderVO();
-        orderDTO.setOrderId(order.getOrderId());
-        orderDTO.setResNo(order.getResNo());
-        orderDTO.setUserName(order.getUserName());
-        orderDTO.setCreateDate(order.getCreateDate());
+        if (order != null){
+            orderDTO.setOrderId(order.getOrderId());
+            orderDTO.setResNo(order.getResNo());
+            orderDTO.setUserName(order.getUserName());
+            orderDTO.setCreateDate(order.getCreateDate());
 
-        List<OrderDetailVO> list = new ArrayList<>();
+            List<OrderDetailVO> list = new ArrayList<>();
 
-        for (HotelOrder.OrderDetail orderDetail : order.getOrderDetailsList()){
-            OrderDetailVO orderDetailDTO = new OrderDetailVO();
-            orderDetailDTO.setHotelId(orderDetail.getHotelId());
-            orderDetailDTO.setAmount(orderDetail.getAmount());
-            orderDetailDTO.setResNo(order.getResNo());
-            List<String> rooms = new ArrayList<>();
-            rooms.addAll(orderDetail.getRoomNosList());
-            orderDetailDTO.setRoomNos(rooms);
-            list.add(orderDetailDTO);
+            for (HotelOrder.OrderDetail orderDetail : order.getOrderDetailsList()){
+                OrderDetailVO orderDetailDTO = new OrderDetailVO();
+                orderDetailDTO.setHotelId(orderDetail.getHotelId());
+                orderDetailDTO.setAmount(orderDetail.getAmount());
+                orderDetailDTO.setResNo(order.getResNo());
+                List<String> rooms = new ArrayList<>();
+                rooms.addAll(orderDetail.getRoomNosList());
+                orderDetailDTO.setRoomNos(rooms);
+                list.add(orderDetailDTO);
+            }
+
+            orderDTO.setOrderDetails(list);
         }
-
-        orderDTO.setOrderDetails(list);
 
         return orderDTO;
     }

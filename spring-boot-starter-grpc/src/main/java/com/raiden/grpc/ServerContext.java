@@ -12,6 +12,7 @@ import com.raiden.rpc.CommonServiceGrpc;
 import com.raiden.rpc.GrpcService;
 import io.grpc.Channel;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.concurrent.TimeUnit;
 
@@ -43,7 +44,10 @@ public class ServerContext {
             ListenableFuture<GrpcService.Response> handle = futureStub.handle(request);
             response = handle.get(5, TimeUnit.SECONDS);
         }catch (Exception exception){
-            log.warn("rpc exception: {}", exception.getMessage());
+            log.error("rpc exception: {}", exception.getMessage());
+        }
+        if (null == response){
+            return new GrpcResponse();
         }
         return serializeService.deserialize(response);
     }

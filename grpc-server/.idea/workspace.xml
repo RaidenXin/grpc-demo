@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e256adf0-6df9-4ea4-b597-1b4a2ccf7530" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../grpc-server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4e08a6c1-8c16-4536-a9c8-9a8707c73017" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grpc-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../grpc-client/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-boot-starter-grpc/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-starter-grpc/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-boot-starter-grpc/src/main/java/com/raiden/grpc/ServerContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-starter-grpc/src/main/java/com/raiden/grpc/ServerContext.java" afterDir="false" />
     </list>
@@ -13,28 +13,6 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/raiden/grpc/spring-boot-starter-grpc/1.0-SNAPSHOT/spring-boot-starter-grpc-1.0-SNAPSHOT.jar!/com/raiden/grpc/service/impl/ProtoStuffSerializeService.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/raiden/grpc/spring-boot-starter-grpc/1.0-SNAPSHOT/spring-boot-starter-grpc-1.0-SNAPSHOT.jar!/com/raiden/grpc/ServerContext.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="49" column="52" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -48,56 +26,52 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="grpc-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="grpc-client" type="462c0819:PsiDirectoryNode" />
+              <item name="grpc-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="grpc-server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="grpc-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="grpc-client" type="462c0819:PsiDirectoryNode" />
+              <item name="grpc-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="grpc-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="grpc-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="grpc-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="grpc-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="grpc-client" type="462c0819:PsiDirectoryNode" />
+              <item name="grpc-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="grpc-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="grpc-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="grpc-client" type="462c0819:PsiDirectoryNode" />
+              <item name="grpc-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="grpc-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="grpc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="grpc-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="grpc-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570632440602" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../grpc-server" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570632440649" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -113,8 +87,8 @@
   </component>
   <component name="RunManager">
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="grpc-client" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.raiden.grpc.Application" />
+      <module name="grpc-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.raiden.grpc.server.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -125,17 +99,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e256adf0-6df9-4ea4-b597-1b4a2ccf7530" name="Default Changelist" comment="" />
-      <created>1570631272317</created>
+      <changelist id="4e08a6c1-8c16-4536-a9c8-9a8707c73017" name="Default Changelist" comment="" />
+      <created>1570631978089</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1570631272317</updated>
-      <workItem from="1570631276301" duration="926000" />
+      <updated>1570631978089</updated>
+      <workItem from="1570631979392" duration="302000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="926000" />
+    <option name="totallyTimeSpent" value="302000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -146,7 +120,7 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Capture Tool" />
       <window_info id="Web" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" />
@@ -159,7 +133,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -178,21 +152,5 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/raiden/grpc/spring-boot-starter-grpc/1.0-SNAPSHOT/spring-boot-starter-grpc-1.0-SNAPSHOT.jar!/com/raiden/grpc/service/impl/ProtoStuffSerializeService.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/raiden/grpc/spring-boot-starter-grpc/1.0-SNAPSHOT/spring-boot-starter-grpc-1.0-SNAPSHOT.jar!/com/raiden/grpc/ServerContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="49" column="52" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
