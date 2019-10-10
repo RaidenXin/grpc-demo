@@ -7,6 +7,7 @@ import com.raiden.grpc.annotation.GrpcServiceScan;
 import com.raiden.grpc.binding.GrpcServiceProxy;
 import com.raiden.grpc.service.CommonService;
 import com.raiden.grpc.service.SerializeService;
+import com.raiden.grpc.service.impl.ProtoStuffSerializeService;
 import com.raiden.grpc.service.impl.SofaHessianSerializeService;
 import com.raiden.grpc.util.ClassNameUtils;
 import lombok.extern.slf4j.Slf4j;
@@ -51,12 +52,12 @@ public class GrpcAutoConfiguration {
     }
 
     /**
-     * 全局 RPC 序列化/反序列化
+     * 全局 RPC 序列化/反序列化 默认使用protobuf
      */
     @Bean
     @ConditionalOnMissingBean(SerializeService.class)
     public SerializeService serializeService() {
-        return new SofaHessianSerializeService();
+        return new ProtoStuffSerializeService();
     }
 
     /**
